@@ -4,45 +4,69 @@ class Program
 {
     static void Main(string[] args)
     {
-        Estructuras demo = new Estructuras();
+        //STRUCT
+        // Struct.Point2 point = new Struct.Point();
+        // point.X = 10;
+        // point.Y = 20;
+        // //
+        // Console.WriteLine($"Point: ({point.X}, {point.Y})");
+        
+        //COLECCIONES
+        Coleccion demo = new Coleccion();
 
-        //demo.EjemploArray();
-        //demo.EjemploLista();
-        demo.EjemploListaObjetos();
+         //demo.EjemploArray();
+        // demo.EjemploLista();
+        //demo.EjemploListaObjetos();
         
         //demo.EjemploDiccionario();
         //demo.EjemploCola();
         //demo.EjemploPila();
         
         //PARAMETROS
-        // PasarParametros ejemplo = new PasarParametros();
+          PasajeParametros demoParametros = new PasajeParametros();
+         //
+         // int valorRef = 10;
+         // Console.WriteLine("Antes de ModificarPorReferencia: " + valorRef);
+         // demoParametros.ModificarPorReferencia(ref valorRef);
+         // Console.WriteLine("Después de ModificarPorReferencia: " + valorRef);
+         //
+         // int valorOut;
+         // int valorOut2
+          //demoParametros.AsignarPorOut(out valorOut , out valorOut2);
+         // Console.WriteLine("Después de AsignarPorOut2: " + valorOut + " valorOut2 " + valorOut2);
+            
+         // // Crear un empleado con el constructor por defecto
+         // Employee empleado1 = new Employee();
+         // Console.WriteLine("Empleado1 salario: " + empleado1.Salary);
+         // //
+         // // // Crear un empleado con un salario anual
+         // Employee empleado2 = new Employee(50000);
+         // Console.WriteLine("Empleado2 salario: " + empleado2.Salary);
+         // //
+         // // // Crear un empleado con un salario semanal y el número de semanas
+         // Employee empleado3 = new Employee(1000, 52);
+         // Console.WriteLine("Empleado3 salario: " + empleado3.Salary);
+        
+        //BASE-> llamado metodo de la clase padre 
+        // Gato cat = new Gato();
+        // cat.HacerSonido();
+
+        //THIS Y CLASE DENTRO DE CLASE
+        // Create objects:
+        // ClaseThis.Employee E1 = new ClaseThis.Employee("Mingda Pan", "mpan");
+        // E1.PrintEmployee();
+
+        //GENERICAS
+
+        // Generica<int> miInt = new Generica<int>(10);
+        // Console.WriteLine("LA DE INT " + miInt.GetDato()); 
         //
-        // int valor = 10;
-        // Console.WriteLine("Valor original: " + valor);
-        //
-        // int valor1 = ejemplo.PasarPorValor(valor, "10");
-        // Console.WriteLine("Después de PasarPorValor: " + valor);
-        // Console.WriteLine("Después de PasarPorValor: " + valor1);
-        //
-        // ejemplo.PasarPorReferencia(ref valor);
-        // Console.WriteLine("Después de PasarPorReferencia: " + valor);
-        //
-        // int valorOut;
-        // ejemplo.PasarPorOut(out valorOut);
-        // Console.WriteLine("Después de PasarPorOut: " + valorOut);
+        // // Crear una instancia de MiClaseGenerica para string
+        // Generica<string> miString = new Generica<string>("Hola mundo");
+        // Console.WriteLine("LA DE STRING " + miString.GetDato()); 
+
+        //DEMOSTRADOR DE EXCEPCIONES
+        // DemostradorExcepciones dE = new DemostradorExcepciones();
+        // dE.DividirPorCero();
     }
 }
-
-// • Pasaje	de	parámetros	en	C#.
-
-
-//• Diferencias	entre	referencia	e	instancia	a	nivel	conceptual.
-//• Palabras	reservadas:	ref,	out.
-//• Constructores	y	uso	de	this()	y	base().
-// • Colecciones.
-// • Generics.
-//  • Estructuras	de	control	nuevas:	foreach.
-//• Interfaces.
-// • XML,	XMLWriter,	XMLReader,	Parsers
-//• Expresiones	Lambda
-//  • Excepciones
